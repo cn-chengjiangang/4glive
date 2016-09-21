@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 push_start() {
-  nohup ./rtmpPusher -c conf/cam.conf >trace.log 2>&1 &
+  nohup ./armv7/rtmpPusher -c conf/cam.conf >trace.log 2>&1 &
 }
 
 push_stop() {

@@ -2,7 +2,7 @@
 start(){
   nohup ./monitor.py -i enp0s25 -m e3276 >/dev/null 2>&1 &
   sleep 1
-  nohup ./rtmpPusher -c conf/encoder.conf >trace.log 2>&1 &
+  nohup ./mipsel/rtmpPusher -c conf/encoder.conf >trace.log 2>&1 &
   echo "Process startup ... "
 }
 
